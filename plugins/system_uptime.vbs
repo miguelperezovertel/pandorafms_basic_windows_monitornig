@@ -28,11 +28,11 @@ FOR EACH objOS in colOS
 	'Wscript.Echo "Last Boot Up Time Sec : " & TimeSpanSec(objWMIDateTime.GetVarDate,NOW)
 	tmp = TimeSpanSec(objWMIDateTime.GetVarDate,NOW)
 	' Seconds from last boot
-	call outputModuleGenericData("System Uptime - Seconds","",tmp)
+	call outputModuleGenericData("System Uptime - Seconds from Last Boot","",tmp)
 	' Date time in string format of last boot
-	call outputModuleGenericDataString("System Uptime - DateTime","",objWMIDateTime.GetVarDate)
+	call outputModuleGenericDataString("System Uptime - Date and Time of Last Boot","",objWMIDateTime.GetVarDate)
 	' Local Date and Time as string
-	call outputModuleGenericDataString("System Local DateTime","",FormatDateTime(Now))
+	call outputModuleGenericDataString("System Uptime - Local Date and Time","",FormatDateTime(Now))
 NEXT
  
 Function WMIDateStringToDate(dtmBootup)
