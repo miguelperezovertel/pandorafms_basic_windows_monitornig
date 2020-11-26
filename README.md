@@ -226,6 +226,7 @@ Distribuido con the GNU General Public License v3.0. Ver `LICENSE` para mas info
 <!-- AGRADECIMIENTOS -->
 ## Agradecimientos
 * [Microsoft - Consultas WMI](https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-logicaldisk)
+* [PandoraFMS - Como programar los plugins](https://pandorafms.com/docs/index.php?title=Pandora:Documentation_es:Anexo_Agent_Plugins)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
