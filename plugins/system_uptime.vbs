@@ -5,6 +5,7 @@
 'Conversion de tiempo datetime
 'https://stackoverflow.com/questions/7011357/how-do-i-get-the-date-time-vbs
 
+On Error Resume Next
 
 strComputer = "."
 Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")

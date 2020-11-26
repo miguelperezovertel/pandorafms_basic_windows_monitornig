@@ -1,5 +1,8 @@
 ' https://www.activexperts.com/admin/vbscript-collection/storage/diskdrives/monitoring/
 ' http://www.cruto.com/resources/vbscript/vbscript-examples/storage/disks/monitor/Monitor-Physical-Disk-Performance.asp
+
+On Error Resume Next
+
 strComputer = "."
 Set objWMIService = GetObject("winmgmts:" _
     & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
