@@ -1,14 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -32,20 +21,23 @@
   <a href="https://www.overtel.com">
     <img src="images/logo.png" alt="Logo Overtel" width="30%" height="30%">
   </a>
-  <!--
   <a href="https://pandorafms.com/">
     <img src="images/pandorafms_logo.png" alt="Logo PandoraFMS" width="30%" height="30%">
   </a>
+  <a href="https://www.microsoft.com/">
+    <img src="images/microsoft_logo.png" alt="Logo Microsoft" width="30%" height="30%">
+  </a>
   
 
-  <h3 align="center">Recogida de datos del estado físico de servidores mediante protocolo IPMI</h3>
+  <h3 align="center">Plugins de recogida de datos basicos de servidor Microsoft Windows mediante consultas WMI en scripts vbs</h3>
 
   <p align="center">
-    Scripts que nos permite extraer datos de las consultas IPMI a servidores físicos para luego almacenarlos en PandoraFMS
+    Conjunto de scripts que nos permite extraer datos basicos de uso de CPU, Memoria física y virtual, Rendimiento de discos, Rendimiento de tarjetas de red así como paquetes con error.<br>
+	Todo mediante el uso de scripts vbs
     <br />
-    <a href="https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries/issues">Reportar un Bug</a>
+    <a href="https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig/issues">Reportar un Bug</a>
     ·
-    <a href="https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries/issues">Requerir una nueva caracteristica</a>
+    <a href="https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig/issues">Requerir una nueva caracteristica</a>
   </p>
 </p>
 
@@ -110,7 +102,7 @@ cd c:\
 cd pandorafms
 mkdir scripts
 cd scripts
-git clone https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries
+git clone https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig
 ```
 2. En la misma carpeta donde este el script, debemos tener un fichero ini donde se configuren las Ip, user, pass y tipo de cada servidor físico a monitorizar.
 ```sh
@@ -328,7 +320,7 @@ Distribuido con the GNU General Public License v3.0. Ver `LICENSE` para mas info
 <!-- CONTACTO -->
 ## Contacto
 
-- Project Link: [https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries](https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries)
+- Project Link: [https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig](https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig)
 - LinkedIn: [LinkedIn][linkedin-url]
 
 <!-- AGRADECIMIENTOS -->
@@ -341,16 +333,16 @@ Distribuido con the GNU General Public License v3.0. Ver `LICENSE` para mas info
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/franciscotudel-overtel/pandorafms_ipmi_queries.svg?style=flat-square
-[contributors-url]: https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/francisco-tudel-escalona-44076069/pandorafms_ipmi_queries.svg?style=flat-square
-[forks-url]: https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries/network/members
-[stars-shield]: https://img.shields.io/github/stars/francisco-tudel-escalona-44076069/pandorafms_ipmi_queries.svg?style=flat-square
-[stars-url]: https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries/stargazers
-[issues-shield]: https://img.shields.io/github/issues/francisco-tudel-escalona-44076069/pandorafms_ipmi_queries.svg?style=flat-square
-[issues-url]: https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries/issues
-[license-shield]: https://img.shields.io/github/license/francisco-tudel-escalona-44076069/pandorafms_ipmi_queries.svg?style=flat-square
-[license-url]: https://github.com/franciscotudel-overtel/pandorafms_ipmi_queries/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/franciscotudel-overtel/pandorafms_basic_windows_monitornig.svg?style=flat-square
+[contributors-url]: https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/francisco-tudel-escalona-44076069/pandorafms_basic_windows_monitornig.svg?style=flat-square
+[forks-url]: https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig/network/members
+[stars-shield]: https://img.shields.io/github/stars/francisco-tudel-escalona-44076069/pandorafms_basic_windows_monitornig.svg?style=flat-square
+[stars-url]: https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig/stargazers
+[issues-shield]: https://img.shields.io/github/issues/francisco-tudel-escalona-44076069/pandorafms_basic_windows_monitornig.svg?style=flat-square
+[issues-url]: https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig/issues
+[license-shield]: https://img.shields.io/github/license/francisco-tudel-escalona-44076069/pandorafms_basic_windows_monitornig.svg?style=flat-square
+[license-url]: https://github.com/franciscotudel-overtel/pandorafms_basic_windows_monitornig/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/francisco-tudel-escalona-44076069
 
