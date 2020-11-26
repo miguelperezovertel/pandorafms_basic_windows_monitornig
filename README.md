@@ -180,6 +180,36 @@ Devuelve un *entero*.<br>
 module_plugin module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\interfaces.vbs" //nologo
 ```
 
+### Physical Memory
+*Descripción*:
+Obtener Total, usado y libre y tantos por ciento % de la memoria física.
+*Dato Devuelto*:
+Devuelve un *entero*.<br>
+
+```
+module_plugin module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\physical_memory.vbs" //nologo
+```
+
+### Virtual Memory
+*Descripción*:
+Obtener Total, usado y libre y tantos por ciento % de la memoria virtual.
+*Dato Devuelto*:
+Devuelve un *entero*.<br>
+
+```
+module_plugin module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\virtual_memory.vbs" //nologo
+```
+
+### Uptime
+*Descripción*:
+Obtener Segundos desde el último reinicio, Fecha y hora del último reinicio y Fecha y hora local (con el desfase del tiempo de muestreo, por defecto 5 minutos)
+*Dato Devuelto*:
+Devuelve un *string*.<br>
+
+```
+module_plugin module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\system_uptime.vbs" //nologo
+```
+
 <!-- LICENCIA -->
 ## Licencia
 
