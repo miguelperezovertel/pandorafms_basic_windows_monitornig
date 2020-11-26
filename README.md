@@ -70,8 +70,7 @@ La recogida de los datos se lleva a cabo por medio de scripts vbs que se encarga
 
 
 <!-- COMENZANDO -->
-
-
+## Comenzando
 ### Prerequisitos
 
 * El agente de PandoraFMS debe estar instalado y ser funcional.
