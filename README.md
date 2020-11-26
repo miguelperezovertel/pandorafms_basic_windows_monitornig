@@ -225,7 +225,7 @@ Distribuido con the GNU General Public License v3.0. Ver `LICENSE` para mas info
 
 <!-- AGRADECIMIENTOS -->
 ## Agradecimientos
-* [Wikipedia - Que es IPMI](https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface)
+* [Microsoft - Consultas WMI](https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-logicaldisk)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
