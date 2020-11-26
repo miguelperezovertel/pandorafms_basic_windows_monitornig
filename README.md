@@ -19,13 +19,13 @@
 <br />
 <p align="center">
   <a href="https://www.overtel.com">
-    <img src="images/logo.png" alt="Logo Overtel" width="30%" height="30%">
+    <img src="images/overtel-logo.png" alt="Logo Overtel" width="30%" height="30%">
   </a>
   <a href="https://pandorafms.com/">
-    <img src="images/pandorafms_logo.png" alt="Logo PandoraFMS" width="30%" height="30%">
+    <img src="images/pandorafms-logo.png" alt="Logo PandoraFMS" width="30%" height="30%">
   </a>
   <a href="https://www.microsoft.com/">
-    <img src="images/microsoft_logo.png" alt="Logo Microsoft" width="30%" height="30%">
+    <img src="images/microsoft-logo.jpg" alt="Logo Microsoft" width="30%" height="30%">
   </a>
   
 
