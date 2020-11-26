@@ -50,8 +50,9 @@
 * [Comenzando](#Comenzando)
   * [Prerequisitos](#Prerequisitos)
   * [Instalacion](#Instalacion)
-* [Ejemplos de Uso](#Ejemplos-de-uso)
-  * [Estado de fuentes de alimentacion](#Estado-de-fuentes-de-alimentacion)
+* [Ejemplos de uso](#Ejemplos-de-uso)
+  * [Recoger todo de golpe](#Recoger-Todo-de-Golpe)
+  * [Recoger modulos por separado](#Recoger-modulos-por-separado)
 * [Contribuir](#contribuir)
 * [Licencia](#licencia)
 * [Contacto](#contacto)
@@ -111,11 +112,12 @@ Simplemente para recordar, En la Wiki de pandorafms, [aqui](https://pandorafms.c
 - *Numérico asíncrono* (async_data): Para valores numéricos de tipo asíncrono.
 
 
-## Recoger Todo de Golpe como plugin
+## Recoger Todo de Golpe
 
 ### Todas las medidas
 *Descripción*:
 Obtener telemetria de todos los plugins contenidos aqui.<br>
+Dentro del Script es posible habilitar más medidas si se cree necesario.<br>
 *Dato Devuelto*:
 Devuelve un *string*.<br>
 
@@ -123,6 +125,60 @@ Devuelve un *string*.<br>
 module_plugin "%PROGRAMFILES%\Pandora_Agent\util\basic_monitoring_all_modules.cmd"
 ```
 
+## Recoger modulos por separado
+
+### Logical Disk
+*Descripción*:
+Obtener medidas de tiempos y uso de discos logicos.<br>
+Dentro del Script es posible habilitar más medidas si se cree necesario.<br>
+*Dato Devuelto*:
+Devuelve un *entero*.<br>
+
+```
+module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\disk_perfomance_logical_disk.vbs" //nologo
+```
+
+### Physical Disk
+*Descripción*:
+Obtener medidas de tiempos y uso de discos físicos.<br>
+Dentro del Script es posible habilitar más medidas si se cree necesario.<br>
+*Dato Devuelto*:
+Devuelve un *entero*.<br>
+
+```
+module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\disk_perfomance_physical_disk.vbs" //nologo
+```
+
+### Disk usage with total
+*Descripción*:
+Obtener medidas de porcentage libre en disco duro CON tamaño total del mismo en cada nombre de modulo.<br>
+Facilita y aclara la visualización de las gráficas, ya que en la etiqueta esta el tamaño.<br>
+*Dato Devuelto*:
+Devuelve un *entero*.<br>
+
+```
+module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\disk_usage_with_total.vbs" //nologo
+```
+
+### CPU
+*Descripción*:
+Obtener medidas de tiempos y uso de CPU.<br>
+*Dato Devuelto*:
+Devuelve un *entero*.<br>
+
+```
+module_plugin module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\cpu_usage.vbs" //nologo
+```
+
+### Network Interfaces
+*Descripción*:
+Obtener Velocidades en envio y recepcion, errores y velocidad del enlace de todas las tarjetas de red.<br>
+*Dato Devuelto*:
+Devuelve un *entero*.<br>
+
+```
+module_plugin module_plugin cscript.exe //B "%PROGRAMFILES%\Pandora_Agent\util\interfaces.vbs" //nologo
+```
 
 <!-- LICENCIA -->
 ## Licencia
