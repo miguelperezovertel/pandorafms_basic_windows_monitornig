@@ -42,10 +42,11 @@ For Each objItem in colItems
 		' Include only harddrivers (type 3)
 		If (objItem.FreeSpace <> "") Then
             'Percent = round (100 - (objItem.FreeSpace / objItem.Size) * 100, 1)
-			Percent = round ( 100 - ((objItem.FreeSpace / objItem.Size) * 100), 1)
+			Percent = round ( (objItem.FreeSpace / objItem.Size) * 100, 1)
 			' 1073741824 = 1024 * 1024 * 1024
 			Total   = round ((objItem.Size / 1073741824), 1)
-			call outputModuleGenericData("Free Disk " & objItem.Name & " % - " & Total & " Gb" , "Free Space on Drive " & objItem.Name & " %", Percent)
+			Usage2  = round (((objItem.Size - objItem.FreeSpace) / 1073741824), 1)
+			call outputModuleGenericData("Free Disk " & objItem.Name & " % - Used: " & Usage2 & " - Total: " & Total & " Gb" , "Free Space on Drive " & objItem.Name & " %", Percent)
 	    End If
 	'End If
 Next
