@@ -45,7 +45,7 @@ For Each objItem in colItems
 			Percent = round ( 100 - ((objItem.FreeSpace / objItem.Size) * 100), 1)
 			' 1073741824 = 1024 * 1024 * 1024
 			Total   = round ((objItem.Size / 1073741824), 1)
-			call outputModuleGenericData("Free Disk " & objItem.Name & " % - " & Total & " Gb" , "Free Space on Drive " & objItem.Name & " %", Percent)
+			call outputModuleGenericData("Used Disk " & objItem.Name & " % - " & Total & " Gb" , "Used Space on Drive " & objItem.Name & " %", Percent)
 	    End If
 	'End If
 Next
