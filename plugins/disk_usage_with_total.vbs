@@ -45,7 +45,7 @@ For Each objItem in colItems
 			Percent = round ( 100 - ((objItem.FreeSpace / objItem.Size) * 100), 1)
 			' 1073741824 = 1024 * 1024 * 1024
 			Total   = round ((objItem.Size / 1073741824), 1)
-			call outputModuleGenericData("Used Disk " & objItem.Name & " % - " & Total & " Gb" , "Used Space on Drive " & objItem.Name & " %", Percent)
+			call outputModuleGenericData("Busy Disk " & objItem.Name & " " & Total & " Gb" , "Busy Disk " & objItem.Name & " %", Percent)
 	    End If
 	'End If
 Next
@@ -56,10 +56,10 @@ Sub outputModuleGenericData(module_name,module_description,cdata)
 	Wscript.StdOut.Write vbTab & "<type><![CDATA[generic_data]]></type>"                              & vbCrLf
 	Wscript.StdOut.Write vbTab & "<description><![CDATA[" & module_description & "]]></description>"  & vbCrLf
 	'Wscript.StdOut.Write vbTab & "<module_interval><![CDATA[1]]></module_interval>"                   & vbCrLf
-	Wscript.StdOut.Write vbTab & "<min_critical><![CDATA[0]]></min_critical>"                         & vbCrLf
-	Wscript.StdOut.Write vbTab & "<max_critical><![CDATA[30]]></max_critical>"                         & vbCrLf
-	Wscript.StdOut.Write vbTab & "<min_warning><![CDATA[30]]></min_warning>"                           & vbCrLf
-	Wscript.StdOut.Write vbTab & "<max_warning><![CDATA[40]]></max_warning>"                           & vbCrLf
+	Wscript.StdOut.Write vbTab & "<min_critical><![CDATA[85]]></min_critical>"                         & vbCrLf
+	Wscript.StdOut.Write vbTab & "<max_critical><![CDATA[89.9]]></max_critical>"                         & vbCrLf
+	Wscript.StdOut.Write vbTab & "<min_warning><![CDATA[90]]></min_warning>"                           & vbCrLf
+	Wscript.StdOut.Write vbTab & "<max_warning><![CDATA[100]]></max_warning>"                           & vbCrLf
 	Wscript.StdOut.Write vbTab & "<data><![CDATA["        & cdata              & "]]></data>"         & vbCrLf
 	Wscript.StdOut.WriteLine "</module>"
 End Sub
